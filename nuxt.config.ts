@@ -2,10 +2,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    "@nuxtjs/tailwindcss",
-    ["@pinia/nuxt", { autoImports: ["defineStore"] }],
+    '@nuxtjs/tailwindcss',
+    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    '@nuxt/image'
   ],
   pinia: {
-    storesDirs: ["stores"],
+    storesDirs: ['stores']
   },
-});
+  image: {
+    providers: {
+      TMDB: {
+        src: process.env.TMDB_IMG_URL
+      }
+    }
+  }
+})

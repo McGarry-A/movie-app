@@ -1,10 +1,9 @@
 <template>
   <div>
-    <p>{{ sayHello("Ahmed") }} {{ test }}</p>
+    <pre>{{ movies }}</pre>
   </div>
 </template>
 
 <script setup lang="ts">
-const test = ref("Ahmed");
-const { sayHello } = myStore();
+const { data: movies } = await useFetch('/api/movie')
 </script>
