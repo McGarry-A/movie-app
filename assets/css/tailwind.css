@@ -7,10 +7,6 @@
         height: 100%;
     }
 
-    :root {
-        @apply font-secondary
-    }
-
     :root,
     .light {
         --brand-soft: theme("colors.stone.100");
@@ -55,7 +51,7 @@
 
 @layer utilities {
     .h1, .h2 {
-        @apply text-clear font-semibold font-primary
+        @apply text-clear font-semibold
     }
     
     .h1 {

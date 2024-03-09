@@ -1,8 +1,10 @@
 <template>
   <div class="">
-    <h2>{{ title }}</h2>
+    <h2 class="mb-2 text-3xl font-bold tracking-tighter text-clear">
+      {{ title }}
+    </h2>
 
-    <div class="flex gap-2">
+    <div class="relative flex gap-2">
       <slot />
     </div>
   </div>
