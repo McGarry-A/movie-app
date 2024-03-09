@@ -1,6 +1,8 @@
 <template>
   <div>
-    <pre>{{ movies }}</pre>
+    <GenericRow title="Popular Now">
+      <CardPoster v-for="movie in movies" :key="movie.id" :movie="movie" />
+    </GenericRow>
   </div>
 </template>
 

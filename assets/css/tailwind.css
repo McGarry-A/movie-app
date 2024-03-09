@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html,body {
+        height: 100%;
+    }
+
+    :root {
+        @apply font-secondary
+    }
+
+    :root,
+    .light {
+        --brand-soft: theme("colors.stone.100");
+        --brand: theme("colors.stone.500");
+        --brand-strong: theme("colors.stone.800");
+        --secondary: theme("colors.indigo.600");
+        --surface-disabled: theme("colors.gray.400");
+        --dim: theme("colors.gray.500");
+    
+        --forground-disabled: theme("colors.gray.500");
+    
+        --core-win: theme("colors.green.600");
+        --core-loss: theme("colors.red.600");
+        --core-draw: theme("colors.gray.400");
+        --core-yellow-card: theme("colors.yellow.400");
+        --focus: theme("colors.yellow.400");
+    
+        --surface-bg: theme("colors.white");
+        --surface-elevation-low: theme("colors.stone.200");
+        --surface-elevation-high: theme("colors.stone.300");
+    
+        --clear: theme("colors.stone.900");
+        --subtle: theme("colors.stone.400");
+        --inverse-subtle: theme("colors.gray.200");
+        --inverse-clear: theme("colors.white");
+      }
+    
+      .dark {
+        --brand-strong: theme("colors.stone.200");
+        --brand-soft: theme("colors.stone.700");
+
+        --surface-bg: theme("colors.stone.900");
+        --surface-elevation-low: theme("colors.stone.800");
+        --surface-elevation-high: theme("colors.stone.700");
+    
+        --clear: theme("colors.white");
+        --subtle: theme("colors.stone.500");
+        --inverse-subtle: theme("colors.stone.800");
+        --inverse-clear: theme("colors.stone.50");
+      }
+}
+
+@layer utilities {
+    .h1, .h2 {
+        @apply text-clear font-semibold font-primary
+    }
+    
+    .h1 {
+        @apply text-5xl 
+    }
+
+    .h2 {
+        @apply text-3xl 
+    }
+}

@@ -10,10 +10,11 @@ export default defineNuxtConfig({
     storesDirs: ['stores']
   },
   image: {
-    providers: {
-      TMDB: {
-        src: process.env.TMDB_IMG_URL
-      }
+    domains: [
+      process.env.TMDB_IMG_DOMAIN!
+    ],
+    alias: {
+      TMDB: process.env.TMDB_IMG_URL!
     }
   }
 })
