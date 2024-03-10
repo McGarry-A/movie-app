@@ -38,13 +38,18 @@ const splide = ref<any>(null)
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0, 0.4);
+    background: rgba(0,0,0, 0.5);
     width: 100px;
     height: 100%;
     border-radius: 0px;
     color: white;
     fill: white;
     z-index: 9999;
+    opacity: 0;
+}
+
+.arrow:hover {
+    opacity: 1;
 }
 
 .arrow:hover svg {

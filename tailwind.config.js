@@ -2,6 +2,10 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        primary: 'Poppins, sans-serif',
+        secondary: 'Lato, sans-serif'
+      },
       colors: {
         brand: 'var(--brand)',
         'brand-strong': 'var(--brand-strong)',

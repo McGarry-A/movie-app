@@ -4,7 +4,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-icon',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Lato: true,
+        Poppins: [400, 500, 700, 900]
+      }
+    }]
   ],
   pinia: {
     storesDirs: ['stores']

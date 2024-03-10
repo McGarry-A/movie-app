@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-6">
+  <div class="flex flex-col gap-6 ml-4">
     <GenericCarousel v-if="moviesNowPlaying" title="Now Playing" :movies="moviesNowPlaying" />
     <GenericCarousel v-if="moviesPopular" title="Popular" :movies="moviesPopular" />
   </div>
